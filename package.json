@@ -10,6 +10,9 @@
     "inngest:dev": "inngest-cli dev"
   },
   "dependencies": {
+    "@ai-sdk/anthropic": "^2.0.17",
+    "@ai-sdk/google": "^2.0.17",
+    "@ai-sdk/openai": "^2.0.17",
     "@hookform/resolvers": "^5.2.2",
     "@prisma/client": "^6.19.1",
     "@radix-ui/react-accordion": "^1.2.12",
@@ -42,6 +45,7 @@
     "@trpc/client": "^11.8.1",
     "@trpc/server": "^11.8.1",
     "@trpc/tanstack-react-query": "^11.8.1",
+    "ai": "^5.0.60",
     "better-auth": "^1.4.9",
     "class-variance-authority": "^0.7.1",
     "client-only": "^0.0.1",
