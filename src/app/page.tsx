@@ -19,6 +19,14 @@ const Page = () => {
       },
     })
   );
+
+  const testAi = useMutation(
+    trpc.testAi.mutationOptions({
+      onSuccess: () => {
+        toast.success("Job queued!");
+      },
+    })
+  );
   return (
     <div className="min-h-screen min-w-screen flex items-center justify-center flex-col gap-y-6">
       protected server component
@@ -26,6 +34,9 @@ const Page = () => {
       <LogoutButton />
       <Button onClick={() => create.mutate()} disabled={create.isPending}>
         Create workflow
+      </Button>
+      <Button onClick={() => testAi.mutate()} disabled={testAi.isPending}>
+        Test AI
       </Button>
     </div>
   );
